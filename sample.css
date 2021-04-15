@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #ff9a4b;
+  width: 100%;
+  height: 50px;
+}
+
+main {
+  width: 960px;
+  margin: 50px auto;
+  display: flex; /*親要素に適応させる。*/
+  flex-wrap: wrap;
+}
+
+.a,
+.b,
+.c {
+  width: 300px;
+  background-color: #eeeeee;
+  position: relative;
+  padding: 10px;
+}
+
+.b {
+  margin: 0 30px;
+}
+
+.step {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ff9a4b;
+  color: white;
+}
+
+h3 {
+  margin-bottom: 5px;
+}
+
+.image-a {
+  background-image: url(img/flow01.png);
+  height: 150px;
+}
+
+.image-b {
+  background-image: url(img/flow02.png);
+  height: 150px;
+}
+
+.image-c {
+  background-image: url(img/flow03.png);
+  height: 150px;
+}
+
+.image-a,
+.image-b,
+.image-c {
+  background-size: cover;
+  background-position: bottom;
+  margin-bottom: 15px;
+}
+
+footer {
+  background-color: #aaaaaa;
+  height: 50px;
+}
+
+@media screen and (max-width: 425px) {
+  main {
+    width: 100%;
+    display: block;
+  }
+  .a,
+  .b,
+  .c {
+    width: 90%;
+    margin: 15px auto;
+  }
+
+}
