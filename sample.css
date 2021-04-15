@@ -80,7 +80,12 @@ footer {
   .b,
   .c {
     width: 90%;
-    margin: 15px auto;
+    margin: 20px auto;
   }
-
+  .image-a,
+  .image-b,
+  .image-c {
+    height: 150px;
+    background-position: bottom;
+  }
 }
